@@ -1,0 +1,10 @@
+boost_1_71_0/doc/
+boost_1_71_0/libs/*/doc/*
+boost_1_71_0/tools/*/doc/*
+boost_1_71_0/stage/
+boost_1_71_0/tools/build/src/
+boost_1_71_0/libs/config/checks/architecture/bin/
+boost_1_71_0/bin.v2/
+boost_1_71_0/project-config.jam
+boost_1_71_0/bootstrap.log
+boost_1_71_0/b2.exe

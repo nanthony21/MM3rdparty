@@ -1,0 +1,141 @@
+; PiUsb.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PiUsb"
+
+EXPORTS
+; Shutter Wrapper functions
+piConnectShutter
+piDisconnectShutter
+piSetShutterState
+piGetShutterState
+; Flipper Wrapper Functions
+piConnectFlipper
+piDisconnectFlipper
+piSetFlipperState
+piGetFlipperState
+; Relay Wrapper functions
+piConnectRelay
+piDisconnectRelay
+piSetRelayStates
+piGetRelayStates
+; Filter Wheel Wrapper functions
+piConnectFilter
+piDisconnectFilter
+piSetFilterPosition
+piGetFilterPosition
+; Motor and Motor II Wrapper functions
+piConnectMotor
+piDisconnectMotor
+piGetMotorPosition
+piSetMotorVelocity
+piRunMotorToPosition
+piHomeMotor
+piGetMotorHomeStatus
+piGetMotorMovingStatus
+piGetMotorVelocity
+piHaltMotor
+; Twister Wrapper functions
+piConnectTwister
+piDisconnectTwister
+piSetTwisterPositionZero
+piRunTwisterToPosition
+piRunTwisterContinuous
+piHaltTwister
+piGetTwisterMovingStatus
+piGetTwisterPosition
+piGetTwisterVelocity
+; Rotator Wrapper functions
+piConnectRotator
+piDisconnectRotator
+piSetRotatorPosition
+piGetRotatorPosition
+; Valve wrapper functions
+piConnectValve
+piDisconnectValve
+piSetValveStates
+piGetValveStates
+piGetValveSensor
+; Wrappers for Labview
+; Shutter
+piCreateShutterObj
+piDestroyShutterObj
+piConnectShutterObj
+piShutterSet
+piShutterReset
+piShutterOpen
+piShutterConnected
+; Flipper
+piCreateFlipperObj
+piDestroyFlipperObj
+piConnectFlipperObj
+piFlipperExtend
+piFlipperRetract
+piFlipperExtended
+piFlipperConnected
+; Filter
+piCreateFilterObj
+piDestroyFilterObj
+piConnectFilterObj
+piGoFilterPosition
+piFilterPosition
+piFilterConnected
+; Relay
+piCreateRelayObj
+piDestroyRelayObj
+piConnectRelayObj
+piRelaySet
+piRelayGet
+piRelayConnected
+; Motor and Motor II
+piCreateMotorObj
+piDestroyMotorObj
+piConnectMotorLV
+piHomeMotorLV
+piSetVelocityLV
+piSetPositionZeroLV
+piHaltMotorLV
+piRunToPositionLV
+piInHomePositionLV
+piMotorMovingLV
+piMotorVelocityLV
+piMotorPositionLV
+piMotorConnectedLV
+; Twister
+piCreateTwisterObj
+piDestroyTwisterObj
+piConnectTwisterLV
+piSetTwisterPositionZeroLV
+piRunTwisterToPositionLV
+piRunTwisterContinuousLV
+piHaltTwisterLV
+piTwisterMovingLV
+piTwisterPositionLV
+piTwisterVelocityLV
+piTwisterConnectedLV
+; Laser Wrapper functions
+piConnectLaser
+piDisconnectLaser
+piSetLaserStates
+piGetLaserStates
+; Laser
+piCreateLaserObj
+piDestroyLaserObj
+piConnectLaserObj
+piLaserSet
+piLaserGet
+piLaserConnected
+; Rotator
+piCreateRotatorObj
+piDestroyRotatorObj
+piConnectRotatorObj
+piGoRotatorPosition
+piRotatorPosition
+piRotatorConnected
+; Valve
+piCreateValveObj
+piDestroyValveObj
+piValveSet
+piValveGet
+piValveGetSensor
+piValveConnected
+

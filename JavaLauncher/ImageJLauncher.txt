@@ -1,0 +1,71 @@
+ImageJ.exe - the Java launcher used by ImageJ on Windows
+
+Author: George H. Silva <George_Silva at chemie_bio_uni-giessen_de>
+
+Requires: ImageJ 1.35j or later
+
+Version History:
+    v1.0.0.x - 2006/1/21 - initial release
+             - Basic code based on "The Java launcher for Windows v1.22" by Jacob Marner
+             - Improved/customized for ImageJ (i.e. can handle file-associations, etc)
+             - This windows stub can be used for other Java applications as well;
+               just change the icon, set the DEF_CFG constant and re-compile!
+
+    v1.1.0.x - 2006/1/23 - many updates/improvements
+             - Robust loader to handle various config scenarios
+             - Code to auto-create the config file
+             - Code for auto-detection of various parameters (JVM, mem usage, etc)
+             - Code to allow selection of needed files
+             - This version essentially can reconfigure itself as needed, depending
+               on how the user changes their JAVA install
+
+    v1.2.0.x - 2006/1/24 - minor updates/improvements
+             - Bug fixes and logic changes per Wayne's suggestions
+
+    v1.3.0.x - 2006/1/24 - minor updates/improvements
+             - Correctly expands command-line params to full-paths as needed
+             - Preserves relative path for JRE if possible
+             - No longer needlessly expands relative paths and re-saves CFG file
+             - Improved logic to make sure tools.jar is in JVM params
+
+    v1.4.0.x - 2006/1/25 - major updates/improvements
+             - Undo command-line expansion bug
+             - Supports all forms of ImageJ execution - all paths, params, etc
+             - Improved logic for adjusting JVM parameters
+
+    v1.4.1.x - 2006/1/31 - minor updates/improvements
+             - New default for setting memory parameter
+             - Additional feedback added for failure situations
+
+    v1.4.2.x - 2006/2/1 - minor updates/improvements
+             - Fixed OpenDilaog code to work with older Win9x systems
+
+    v1.4.3.x - 2006/2/1 - Changed File Description to: "ImageJ Launcher"
+
+
+Installation:
+
+Copy the ImageJ.exe file to your ImageJ installation folder, overwriting the
+exisiting one. If you want to reconfigure your JVM (including getting the compile
+feature to work IF YOU HAVE THE JDK), just delete/rename your current ImageJ.cfg
+file and start the program.
+
+
+Source code:
+
+Delphi Pascal source code is included - feel free to modify/improve/change the code
+for your own purposes. I wrote/compiled this with Delphi v6, so it should run and be
+code-compatible with all exisiting versions of Windows from Win95 and up. The original
+C-source on which I based this code can be found at:
+
+http://www.rolemaker.dk/nonRoleMaker/javalauncher/marner_java_launcher.htm
+
+The program functionality was maintained as is to provide compatibility with previous
+ImageJ installations. Improvemens include properly handling file-associations to launch
+ImageJ, being able to generate/re-config ImageJ and (hopefully) a bullet-proof loader
+that can handle any configuration changes in terms of JAVA or ImageJ. Enjoy!
+
+Any suggestions/comments/requests are welcome.
+
+George.---
+2006-02-01
