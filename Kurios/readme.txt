@@ -1,0 +1,1 @@
+This SDK is used by the Kurios LCTF device adapter. Permission has been granted by Thorlabs to include this in our public repository

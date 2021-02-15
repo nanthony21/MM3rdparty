@@ -1,5 +1,5 @@
 /******************************************************************************/
-/* Copyright (C) Roper Scientific, Inc. All rights reserved.                  */
+/* Copyright (C) Teledyne Photometrics. All rights reserved.                  */
 /******************************************************************************/
 
 #ifndef _MASTER_H
@@ -62,11 +62,11 @@ typedef double         flt64;
 #endif
 
 /**
-@defgroup grp_pm_deprecated Deprecated PVCAM symbols
+@defgroup grp_pm_deprecated Deprecated symbols
 */
 
 /**
-@defgroup grp_pm_deprecated_typedefs Deprecated PVCAM types
+@defgroup grp_pm_deprecated_typedefs Deprecated types
 @ingroup grp_pm_deprecated
 These types are included for compatibility reasons.
 @{
